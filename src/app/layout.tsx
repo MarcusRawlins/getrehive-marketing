@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Sans, Space_Grotesk } from "next/font/google";
 
+import { ScrollManager } from "@/components/scroll-manager";
+
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -57,7 +59,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${dmSans.variable} ${spaceGrotesk.variable}`}>
-      <body>{children}</body>
+      <body>
+        <ScrollManager />
+        {children}
+      </body>
     </html>
   );
 }
