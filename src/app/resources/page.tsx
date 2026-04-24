@@ -1,6 +1,8 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
+import { RehiveLogo } from "@/components/rehive-logo";
+
 const resources = [
   {
     href: "/resources/outdated-site-losing-clients",
@@ -36,8 +38,7 @@ export default function ResourcesPage() {
     <main className="detail-page">
       <header className="detail-header">
         <Link href="/" className="brand-mark">
-          <span className="brand-mark__icon" />
-          <span>ReHive</span>
+          <RehiveLogo />
         </Link>
         <div className="detail-header__actions">
           <Link href="/assessment" className="button button-header-secondary">

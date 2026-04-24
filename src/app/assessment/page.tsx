@@ -1,6 +1,8 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
+import { RehiveLogo } from "@/components/rehive-logo";
+
 export const metadata: Metadata = {
   title: "Business Growth Gap Assessment",
   description:
@@ -173,8 +175,7 @@ export default async function AssessmentPage({
     <main className="detail-page">
       <header className="detail-header">
         <Link href="/" className="brand-mark">
-          <span className="brand-mark__icon" />
-          <span>ReHive</span>
+          <RehiveLogo />
         </Link>
         <div className="detail-header__actions">
           <Link href="/resources" className="button button-header-secondary">

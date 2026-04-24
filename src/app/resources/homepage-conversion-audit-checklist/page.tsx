@@ -1,6 +1,8 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
+import { RehiveLogo } from "@/components/rehive-logo";
+
 export const metadata: Metadata = {
   title: "Homepage Conversion Audit Checklist",
   description:
@@ -12,8 +14,7 @@ export default function HomepageConversionAuditChecklistPage() {
     <main className="article-page">
       <header className="detail-header">
         <Link href="/" className="brand-mark">
-          <span className="brand-mark__icon" />
-          <span>ReHive</span>
+          <RehiveLogo />
         </Link>
       </header>
 

@@ -2,6 +2,8 @@ import Link from "next/link";
 import Script from "next/script";
 
 import { ContactForm } from "@/components/contact-form";
+import { HeroOrbit } from "@/components/hero-orbit";
+import { RehiveLogo } from "@/components/rehive-logo";
 
 const capabilities = [
   "Conversion-first marketing sites",
@@ -95,13 +97,12 @@ export default function Home() {
 
           <header className="home-header">
             <Link href="/" className="brand-mark">
-              <span className="brand-mark__icon" />
-              <span>ReHive</span>
+              <RehiveLogo />
             </Link>
 
             <nav className="home-header__nav" aria-label="Primary">
               <a href="#capabilities">Capabilities</a>
-              <a href="#assessment">Assessment</a>
+              <a href="#process">Process</a>
               <Link href="/resources">Resources</Link>
               <a href="#contact">Inquire</a>
             </nav>
@@ -149,17 +150,7 @@ export default function Home() {
             </div>
 
             <div className="home-hero__visual" aria-hidden="true">
-              <div className="hero-engine">
-                <div className="hero-engine__ring hero-engine__ring--outer" />
-                <div className="hero-engine__ring hero-engine__ring--mid" />
-                <div className="hero-engine__ring hero-engine__ring--inner" />
-                <div className="hero-engine__axis hero-engine__axis--x" />
-                <div className="hero-engine__axis hero-engine__axis--y" />
-                <div className="hero-engine__core">
-                  <span>ReHive system</span>
-                  <strong>Brand + Conversion + Workflow + Search</strong>
-                </div>
-              </div>
+              <HeroOrbit />
             </div>
           </div>
         </section>
@@ -204,7 +195,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="home-process">
+        <section className="home-process" id="process">
           <div className="section-heading">
             <p className="eyebrow">How projects move</p>
             <h2>Designed to make the right thing clearer, easier, and more valuable.</h2>
