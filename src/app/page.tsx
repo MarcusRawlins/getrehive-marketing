@@ -5,11 +5,44 @@ import { ContactForm } from "@/components/contact-form";
 import { HeroOrbit } from "@/components/hero-orbit";
 import { RehiveLogo } from "@/components/rehive-logo";
 
-const capabilities = [
-  "Conversion-first marketing sites",
-  "Workflow layers around your current tools",
-  "Service-business SEO structures",
-  "Custom internal software and automation",
+const frictionPoints = [
+  {
+    title: "Your platform handles 70% of the job",
+    body: "The other 30% still lives in manual follow-up, spreadsheets, workarounds, and missed context between tools.",
+  },
+  {
+    title: "Your site looks fine but does not sell clearly",
+    body: "Visitors can tell you are in business, but they still cannot tell why they should choose you or what happens next.",
+  },
+  {
+    title: "You are spending time maintaining the gaps",
+    body: "Every little exception, process change, or lead handoff adds more owner time instead of reducing it.",
+  },
+  {
+    title: "You want growth without bloated software",
+    body: "You do not need an enterprise rebuild. You need the missing custom layer that makes the current business work better.",
+  },
+];
+
+const offerPillars = [
+  {
+    title: "Websites that explain the offer and convert",
+    body: "Sharper messaging, better structure, better CTA flow, and a site that feels current enough to earn trust fast.",
+  },
+  {
+    title: "Custom workflow layers around your current tools",
+    body: "We build around what already works, then close the gaps that keep costing the team time or consistency.",
+  },
+  {
+    title: "SEO structure that supports long-term growth",
+    body: "Service pages, local intent coverage, resource content, and technical SEO foundations built for actual search behavior.",
+  },
+];
+
+const proofReasons = [
+  "You need a stronger site before spending more on traffic.",
+  "You are tired of generic software almost fitting the business.",
+  "You want someone technical who also understands positioning and conversion.",
 ];
 
 const industries = [
@@ -97,7 +130,7 @@ export default function Home() {
 
           <header className="home-header">
             <Link href="/" className="brand-mark">
-              <RehiveLogo />
+              <RehiveLogo priority />
             </Link>
 
             <nav className="home-header__nav" aria-label="Primary">
@@ -119,15 +152,14 @@ export default function Home() {
 
           <div className="home-hero__content">
             <div className="home-hero__copy">
-              <p className="eyebrow">Custom websites, SEO systems, and workflow layers</p>
+              <p className="eyebrow">For small businesses outgrowing generic tools</p>
               <h1>
-                Custom development for small businesses that outgrow off-the-shelf
-                tools.
+                When your site and software almost work, almost gets expensive.
               </h1>
               <p className="home-hero__lead">
-                ReHive helps service businesses and growing brands stop duct-taping
-                their software together. We build stronger websites, stronger inquiry
-                paths, and stronger systems behind them.
+                ReHive Studio builds custom websites, SEO structures, and workflow
+                layers for service businesses that are tired of managing the gaps
+                between off-the-shelf tools and real-world operations.
               </p>
 
               <div className="home-hero__actions">
@@ -139,8 +171,13 @@ export default function Home() {
                 </a>
               </div>
 
+              <div className="hero-proof">
+                <span>Built for clarity, conversion, and less manual work.</span>
+                <strong>Custom where it matters. Practical where it counts.</strong>
+              </div>
+
               <div className="home-hero__capabilities" id="capabilities">
-                {capabilities.map((item) => (
+                {proofReasons.map((item) => (
                   <div key={item} className="hero-capability">
                     <span className="hero-capability__marker" />
                     <p>{item}</p>
@@ -163,17 +200,50 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="home-friction">
+          <div className="section-heading">
+            <p className="eyebrow">If this sounds familiar</p>
+            <h2>The business is working, but the current setup is costing too much time and trust.</h2>
+          </div>
+
+          <div className="friction-grid">
+            {frictionPoints.map((item) => (
+              <article key={item.title} className="friction-card">
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="home-offer">
+          <div className="section-heading">
+            <p className="eyebrow">What ReHive actually does</p>
+            <h2>We close the gap between what your current tools can do and what your business actually needs.</h2>
+          </div>
+
+          <div className="offer-grid">
+            {offerPillars.map((item) => (
+              <article key={item.title} className="offer-card">
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="home-split">
           <div className="split-panel split-panel--assessment" id="assessment">
             <p className="eyebrow">Business Growth Gap Assessment</p>
-            <h2>Start with a guided diagnosis, not a vague contact prompt.</h2>
+            <h2>Not sure where the biggest leak is? Start with a fast diagnosis.</h2>
             <p>
-              The assessment gives business owners a useful next step: a score,
-              the biggest weak points, and the most relevant resource to read next.
+              The assessment gives you a clearer next step: where the current site,
+              SEO, or workflow is weakest, what matters most to fix first, and which
+              resource to read next.
             </p>
             <div className="split-panel__stat">
-              <span>5 steps</span>
-              <strong>One click at a time</strong>
+              <span>5 questions</span>
+              <strong>Built to qualify the right project</strong>
             </div>
             <Link href="/assessment" className="button button-primary">
               Launch assessment
@@ -182,7 +252,7 @@ export default function Home() {
 
           <div className="split-panel split-panel--resources">
             <p className="eyebrow">Free value</p>
-            <h2>Build search trust with resources people actually want.</h2>
+            <h2>Not ready to inquire yet? Start with resources that actually help.</h2>
             <div className="resource-stack">
               {resources.map((resource) => (
                 <Link key={resource.href} href={resource.href} className="resource-stack__item">
@@ -198,7 +268,7 @@ export default function Home() {
         <section className="home-process" id="process">
           <div className="section-heading">
             <p className="eyebrow">How projects move</p>
-            <h2>Designed to make the right thing clearer, easier, and more valuable.</h2>
+            <h2>Every project is built to make the offer clearer, the path easier, and the system stronger.</h2>
           </div>
 
           <div className="process-rail">
@@ -215,11 +285,11 @@ export default function Home() {
         <section className="home-contact" id="contact">
           <div className="home-contact__intro">
             <p className="eyebrow">General inquiry</p>
-            <h2>If you already know the gap, skip the assessment and tell us what needs to change.</h2>
+            <h2>If you already know something is costing you leads or time, let’s talk about the fix.</h2>
             <p>
-              The best inquiries tell us where the current site, SEO, or workflow
-              is falling short, what tools are already in use, and what result
-              would make the project clearly worth it.
+              Strong inquiries usually mention three things: where the current site
+              or workflow is falling short, what tools are already in place, and
+              what result would make this project clearly worth doing now.
             </p>
           </div>
 

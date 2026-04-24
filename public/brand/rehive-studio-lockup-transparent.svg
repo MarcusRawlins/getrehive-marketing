@@ -1,0 +1,15 @@
+<svg width="1600" height="340" viewBox="0 0 1600 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rehiveTransparentGold" x1="12%" x2="86%" y1="10%" y2="88%">
+      <stop offset="0%" stop-color="#FFF3D8" />
+      <stop offset="38%" stop-color="#ECC476" />
+      <stop offset="100%" stop-color="#9C6024" />
+    </linearGradient>
+  </defs>
+  <path d="M150 28 272.2 98.4v135.2L150 304 27.8 233.6V98.4Z" stroke="url(#rehiveTransparentGold)" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M150 81.6 225.2 125v90L150 258.4 74.8 215v-90Z" stroke="url(#rehiveTransparentGold)" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M99.5 158.3 150 127.6l50.5 30.7" stroke="url(#rehiveTransparentGold)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M102.2 193.8 150 223l47.8-29.2" stroke="url(#rehiveTransparentGold)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="340" y="160" fill="#F7EFE1" font-family="Space Grotesk, DM Sans, Arial, sans-serif" font-size="132" font-weight="600" letter-spacing="-5">ReHive</text>
+  <text x="348" y="224" fill="#B9B0A1" font-family="DM Sans, Arial, sans-serif" font-size="34" font-weight="500" letter-spacing="18">STUDIO</text>
+</svg>
