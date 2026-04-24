@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: getrehive-marketing-demo
+    runtime: node
+    plan: free
+    repo: https://github.com/MarcusRawlins/getrehive-marketing
+    branch: main
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    autoDeploy: true
