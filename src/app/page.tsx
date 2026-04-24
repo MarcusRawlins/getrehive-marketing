@@ -130,7 +130,7 @@ export default function Home() {
 
           <header className="home-header">
             <Link href="/" className="brand-mark">
-              <RehiveLogo priority />
+              <RehiveLogo />
             </Link>
 
             <nav className="home-header__nav" aria-label="Primary">
