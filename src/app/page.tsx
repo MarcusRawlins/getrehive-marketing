@@ -41,8 +41,33 @@ const offerPillars = [
 
 const proofReasons = [
   "You need a stronger site before spending more on traffic.",
-  "You are tired of generic software almost fitting the business.",
-  "You want someone technical who also understands positioning and conversion.",
+  "You are tired of software almost fitting the business.",
+  "You want technical execution tied to real business outcomes.",
+];
+
+const fitSignals = [
+  "You already have a booking platform, CRM, storefront, or quoting tool in place.",
+  "The current setup works, but still leaves too much manual follow-up or maintenance.",
+  "You know the site, messaging, or workflow is holding back better leads or smoother operations.",
+];
+
+const outcomes = [
+  {
+    title: "Clearer positioning",
+    body: "Visitors understand what you do, who it is for, and why your business is the better choice.",
+  },
+  {
+    title: "Stronger inquiry flow",
+    body: "The path from interest to contact becomes more direct, more confident, and easier to act on.",
+  },
+  {
+    title: "Less manual cleanup",
+    body: "The business stops depending on workarounds for every exception, handoff, and follow-up step.",
+  },
+  {
+    title: "Better long-term search visibility",
+    body: "The site is structured for service intent, local relevance, and useful content that compounds over time.",
+  },
 ];
 
 const industries = [
@@ -153,13 +178,12 @@ export default function Home() {
           <div className="home-hero__content">
             <div className="home-hero__copy">
               <p className="eyebrow">For small businesses outgrowing generic tools</p>
-              <h1>
-                When your site and software almost work, almost gets expensive.
-              </h1>
+              <h1>The tools work. The gaps are what keep costing you leads and time.</h1>
               <p className="home-hero__lead">
-                ReHive Studio builds custom websites, SEO structures, and workflow
-                layers for service businesses that are tired of managing the gaps
-                between off-the-shelf tools and real-world operations.
+                ReHive Studio builds the missing custom layer between your website,
+                your current software, and the way the business actually runs, so
+                you stop paying for almost-good-enough with manual work, weaker
+                conversion, and a site that undersells the business.
               </p>
 
               <div className="home-hero__actions">
@@ -173,7 +197,7 @@ export default function Home() {
 
               <div className="hero-proof">
                 <span>Built for clarity, conversion, and less manual work.</span>
-                <strong>Custom where it matters. Practical where it counts.</strong>
+                <strong>Best fit for operators who have already outgrown template fixes.</strong>
               </div>
 
               <div className="home-hero__capabilities" id="capabilities">
@@ -200,6 +224,34 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="home-fit">
+          <div className="section-heading">
+            <p className="eyebrow">Who this is for</p>
+            <h2>If the business is real but the setup still feels patched together, you are probably in the right place.</h2>
+          </div>
+
+          <div className="fit-shell">
+            <div className="fit-panel">
+              <span className="fit-panel__label">Best fit</span>
+              <ul>
+                {fitSignals.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="fit-panel fit-panel--accent">
+              <span className="fit-panel__label">Why teams reach out</span>
+              <p>
+                Usually because they are tired of a site that does not explain the
+                value clearly, a workflow that still needs too much owner attention,
+                or a software stack that handles most of the job but never the
+                high-friction parts.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="home-friction">
           <div className="section-heading">
             <p className="eyebrow">If this sounds familiar</p>
@@ -209,6 +261,22 @@ export default function Home() {
           <div className="friction-grid">
             {frictionPoints.map((item) => (
               <article key={item.title} className="friction-card">
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="home-outcomes">
+          <div className="section-heading">
+            <p className="eyebrow">What improves</p>
+            <h2>The goal is not just a nicer website. The goal is a business that runs and sells better.</h2>
+          </div>
+
+          <div className="outcomes-grid">
+            {outcomes.map((item) => (
+              <article key={item.title} className="outcome-card">
                 <h3>{item.title}</h3>
                 <p>{item.body}</p>
               </article>
@@ -291,6 +359,17 @@ export default function Home() {
               or workflow is falling short, what tools are already in place, and
               what result would make this project clearly worth doing now.
             </p>
+
+            <div className="contact-guidance">
+              <div className="contact-guidance__card">
+                <span>Helpful to include</span>
+                <p>The current tools, where the workflow breaks, and what a better outcome would look like.</p>
+              </div>
+              <div className="contact-guidance__card">
+                <span>What you get back</span>
+                <p>A more grounded conversation about the gap, whether custom work is the right move, and what to prioritize first.</p>
+              </div>
+            </div>
           </div>
 
           <div className="home-contact__form">

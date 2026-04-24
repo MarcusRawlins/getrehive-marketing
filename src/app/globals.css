@@ -78,7 +78,9 @@ body {
 
 .home-header,
 .home-hero__content,
+.home-fit,
 .home-friction,
+.home-outcomes,
 .home-offer,
 .home-process,
 .home-contact,
@@ -473,6 +475,8 @@ body {
 }
 
 .home-friction,
+.home-fit,
+.home-outcomes,
 .home-offer {
   padding: 5rem 0 0;
 }
@@ -492,14 +496,18 @@ body {
 }
 
 .friction-grid,
-.offer-grid {
+.offer-grid,
+.outcomes-grid,
+.fit-shell {
   display: grid;
   gap: 1rem;
   margin-top: 2rem;
 }
 
 .friction-card,
-.offer-card {
+.offer-card,
+.outcome-card,
+.fit-panel {
   min-height: 15rem;
   padding: 1.5rem;
   border: 1px solid rgba(236, 196, 118, 0.1);
@@ -511,7 +519,8 @@ body {
 }
 
 .friction-card h3,
-.offer-card h3 {
+.offer-card h3,
+.outcome-card h3 {
   margin: 0;
   font-family: var(--font-display), sans-serif;
   font-size: 1.55rem;
@@ -520,8 +529,42 @@ body {
 }
 
 .friction-card p,
-.offer-card p {
+.offer-card p,
+.outcome-card p,
+.fit-panel p,
+.fit-panel li,
+.contact-guidance__card p {
   margin: 0.9rem 0 0;
+}
+
+.fit-panel {
+  min-height: auto;
+}
+
+.fit-panel--accent {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(236, 196, 118, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
+    rgba(8, 8, 8, 0.82);
+}
+
+.fit-panel__label,
+.contact-guidance__card span {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+}
+
+.fit-panel ul {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.outcome-card {
+  min-height: 14rem;
 }
 
 .home-split {
@@ -659,6 +702,19 @@ body {
 .home-contact__intro p {
   max-width: 42rem;
   margin-top: 1rem;
+}
+
+.contact-guidance {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.6rem;
+}
+
+.contact-guidance__card {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(236, 196, 118, 0.1);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.025);
 }
 
 .home-contact__form {
@@ -2036,7 +2092,10 @@ img {
   }
 
   .friction-grid,
-  .offer-grid {
+  .offer-grid,
+  .outcomes-grid,
+  .fit-shell,
+  .contact-guidance {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -2089,6 +2148,10 @@ img {
   }
 
   .friction-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .outcomes-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
