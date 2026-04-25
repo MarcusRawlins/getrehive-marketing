@@ -344,21 +344,38 @@ body {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   backdrop-filter: blur(12px);
+  white-space: nowrap;
 }
 
-.concept-orbit__label--top {
-  top: 2rem;
-  left: 7rem;
+.concept-orbit__label--one {
+  top: 4.1rem;
+  left: 7.8rem;
 }
 
-.concept-orbit__label--left {
-  top: 18rem;
-  left: 4rem;
+.concept-orbit__label--two {
+  top: 17.6rem;
+  left: 2.6rem;
 }
 
-.concept-orbit__label--bottom {
-  right: 0;
+.concept-orbit__label--five {
+  right: -0.2rem;
   bottom: 4rem;
+}
+
+.concept-orbit__label > span {
+  display: block;
+}
+
+.concept-orbit__lane--one .concept-orbit__label > span {
+  animation: orbit-counter-a 18s linear infinite;
+}
+
+.concept-orbit__lane--two .concept-orbit__label > span {
+  animation: orbit-counter-b 23s linear infinite;
+}
+
+.concept-orbit__lane--five .concept-orbit__label > span {
+  animation: orbit-counter-a-reverse 20s linear infinite reverse;
 }
 
 .concept-orbit__system {
@@ -540,6 +557,36 @@ body {
 
   to {
     transform: rotate(348deg);
+  }
+}
+
+@keyframes orbit-counter-a {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes orbit-counter-a-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit-counter-b {
+  from {
+    transform: rotate(-18deg);
+  }
+
+  to {
+    transform: rotate(342deg);
   }
 }
 

@@ -40,16 +40,6 @@ export function HeroOrbit() {
       <div className="concept-orbit__mist concept-orbit__mist--two" />
       <div className="concept-orbit__mist concept-orbit__mist--three" />
 
-      <div className="concept-orbit__label concept-orbit__label--top">
-        Stronger positioning
-      </div>
-      <div className="concept-orbit__label concept-orbit__label--left">
-        Smarter automation
-      </div>
-      <div className="concept-orbit__label concept-orbit__label--bottom">
-        More clients &amp; revenue
-      </div>
-
       <div className="concept-orbit__system">
         <span className="concept-orbit__ring concept-orbit__ring--one" />
         <span className="concept-orbit__ring concept-orbit__ring--two" />
@@ -58,9 +48,15 @@ export function HeroOrbit() {
 
         <span className="concept-orbit__lane concept-orbit__lane--one">
           <span className="concept-orbit__planet concept-orbit__planet--one" />
+          <span className="concept-orbit__label concept-orbit__label--one">
+            <span>Stronger positioning</span>
+          </span>
         </span>
         <span className="concept-orbit__lane concept-orbit__lane--two">
           <span className="concept-orbit__planet concept-orbit__planet--two" />
+          <span className="concept-orbit__label concept-orbit__label--two">
+            <span>Smarter automation</span>
+          </span>
         </span>
         <span className="concept-orbit__lane concept-orbit__lane--three">
           <span className="concept-orbit__planet concept-orbit__planet--three" />
@@ -70,6 +66,9 @@ export function HeroOrbit() {
         </span>
         <span className="concept-orbit__lane concept-orbit__lane--five">
           <span className="concept-orbit__planet concept-orbit__planet--five" />
+          <span className="concept-orbit__label concept-orbit__label--five">
+            <span>More clients &amp; revenue</span>
+          </span>
         </span>
 
         <div className="concept-orbit__sphere">
