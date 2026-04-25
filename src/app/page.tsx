@@ -192,18 +192,22 @@ export default function Home() {
             <div className="studio-hero__copy">
               <p className="eyebrow">Custom systems. Real results.</p>
               <h1>
-                Off-the-shelf tools
+                Your tools handle
                 <br />
-                get you 50-90% there.
+                the basics.
                 <br />
-                <span>We close the gap that&apos;s</span>
+                <span>You&apos;re still paying</span>
                 <br />
-                <span>costing you time and clients.</span>
+                <span>for the gaps with lost</span>
+                <br />
+                <span>leads, time, and</span>
+                <br />
+                <span>manual work.</span>
               </h1>
               <p className="studio-hero__lead">
-                ReHive Studio builds custom websites, automation, and workflow
-                systems for service businesses ready to grow without duct-taping
-                tools together.
+                ReHive Studio builds the custom website, automation, and workflow
+                layer that makes your business easier to run, easier to trust,
+                and easier to choose.
               </p>
 
               <div className="studio-hero__actions">
