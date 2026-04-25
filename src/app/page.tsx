@@ -40,9 +40,9 @@ const offerPillars = [
 ];
 
 const proofReasons = [
-  "You need a stronger site before spending more on traffic.",
-  "You are tired of software almost fitting the business.",
-  "You want technical execution tied to real business outcomes.",
+  "Stronger site before paid traffic",
+  "Less manual cleanup between tools",
+  "Technical execution tied to business outcomes",
 ];
 
 const fitSignals = [
@@ -178,7 +178,15 @@ export default function Home() {
           <div className="home-hero__content">
             <div className="home-hero__copy">
               <p className="eyebrow">For small businesses outgrowing generic tools</p>
-              <h1>The tools work. The gaps are what keep costing you leads and time.</h1>
+              <h1>
+                <span>The tools</span>
+                <span>work. The</span>
+                <span>gaps are</span>
+                <span>what keep</span>
+                <span>costing</span>
+                <span>you leads</span>
+                <span>and time.</span>
+              </h1>
               <p className="home-hero__lead">
                 ReHive Studio builds the missing custom layer between your website,
                 your current software, and the way the business actually runs, so
@@ -193,11 +201,6 @@ export default function Home() {
                 <a href="#contact" className="button button-secondary">
                   Send a general inquiry
                 </a>
-              </div>
-
-              <div className="hero-proof">
-                <span>Built for clarity, conversion, and less manual work.</span>
-                <strong>Best fit for operators who have already outgrown template fixes.</strong>
               </div>
 
               <div className="home-hero__capabilities" id="capabilities">
