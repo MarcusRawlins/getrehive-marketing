@@ -15,8 +15,7 @@ export function HeroOrbit() {
 
       frameRef.current = window.requestAnimationFrame(() => {
         const viewportHeight = Math.max(window.innerHeight, 1);
-        const nextProgress = Math.min(window.scrollY / viewportHeight, 1);
-        setProgress(nextProgress);
+        setProgress(Math.min(window.scrollY / viewportHeight, 1));
         frameRef.current = null;
       });
     };
@@ -34,39 +33,44 @@ export function HeroOrbit() {
 
   return (
     <div
-      className="hero-orbit"
-      style={
-        {
-          "--hero-progress": progress.toFixed(3),
-        } as CSSProperties
-      }
-      aria-hidden="true"
+      className="concept-orbit"
+      style={{ "--hero-progress": progress.toFixed(3) } as CSSProperties}
     >
-      <div className="hero-orbit__glow hero-orbit__glow--primary" />
-      <div className="hero-orbit__glow hero-orbit__glow--secondary" />
-      <div className="hero-orbit__field" />
-      <div className="hero-orbit__ring hero-orbit__ring--outer" />
-      <div className="hero-orbit__ring hero-orbit__ring--middle" />
-      <div className="hero-orbit__ring hero-orbit__ring--inner" />
-      <div className="hero-orbit__trace hero-orbit__trace--one" />
-      <div className="hero-orbit__trace hero-orbit__trace--two" />
-      <div className="hero-orbit__satellite hero-orbit__satellite--left">
-        Positioning
+      <div className="concept-orbit__mist concept-orbit__mist--one" />
+      <div className="concept-orbit__mist concept-orbit__mist--two" />
+      <div className="concept-orbit__mist concept-orbit__mist--three" />
+
+      <div className="concept-orbit__label concept-orbit__label--top">
+        Stronger positioning
       </div>
-      <div className="hero-orbit__satellite hero-orbit__satellite--right">
-        Systems
+      <div className="concept-orbit__label concept-orbit__label--left">
+        Smarter automation
       </div>
-      <div className="hero-orbit__satellite hero-orbit__satellite--bottom">
-        Search
+      <div className="concept-orbit__label concept-orbit__label--bottom">
+        More clients &amp; revenue
       </div>
-      <div className="hero-orbit__core">
-        <div className="hero-orbit__core-mark">
-          <span />
-          <span />
-          <span />
+
+      <div className="concept-orbit__system">
+        <span className="concept-orbit__ring concept-orbit__ring--one" />
+        <span className="concept-orbit__ring concept-orbit__ring--two" />
+        <span className="concept-orbit__ring concept-orbit__ring--three" />
+        <span className="concept-orbit__ring concept-orbit__ring--four" />
+
+        <span className="concept-orbit__planet concept-orbit__planet--one" />
+        <span className="concept-orbit__planet concept-orbit__planet--two" />
+        <span className="concept-orbit__planet concept-orbit__planet--three" />
+        <span className="concept-orbit__planet concept-orbit__planet--four" />
+        <span className="concept-orbit__planet concept-orbit__planet--five" />
+
+        <div className="concept-orbit__sphere">
+          <div className="concept-orbit__sphere-core">
+            <div className="concept-orbit__mark">
+              <span />
+              <span />
+              <span />
+            </div>
+          </div>
         </div>
-        <p>ReHive Studio</p>
-        <strong>Brand, conversion, workflow, and search in one custom layer.</strong>
       </div>
     </div>
   );
