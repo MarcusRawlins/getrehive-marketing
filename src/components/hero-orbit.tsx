@@ -56,11 +56,21 @@ export function HeroOrbit() {
         <span className="concept-orbit__ring concept-orbit__ring--three" />
         <span className="concept-orbit__ring concept-orbit__ring--four" />
 
-        <span className="concept-orbit__planet concept-orbit__planet--one" />
-        <span className="concept-orbit__planet concept-orbit__planet--two" />
-        <span className="concept-orbit__planet concept-orbit__planet--three" />
-        <span className="concept-orbit__planet concept-orbit__planet--four" />
-        <span className="concept-orbit__planet concept-orbit__planet--five" />
+        <span className="concept-orbit__lane concept-orbit__lane--one">
+          <span className="concept-orbit__planet concept-orbit__planet--one" />
+        </span>
+        <span className="concept-orbit__lane concept-orbit__lane--two">
+          <span className="concept-orbit__planet concept-orbit__planet--two" />
+        </span>
+        <span className="concept-orbit__lane concept-orbit__lane--three">
+          <span className="concept-orbit__planet concept-orbit__planet--three" />
+        </span>
+        <span className="concept-orbit__lane concept-orbit__lane--four">
+          <span className="concept-orbit__planet concept-orbit__planet--four" />
+        </span>
+        <span className="concept-orbit__lane concept-orbit__lane--five">
+          <span className="concept-orbit__planet concept-orbit__planet--five" />
+        </span>
 
         <div className="concept-orbit__sphere">
           <div className="concept-orbit__sphere-core">

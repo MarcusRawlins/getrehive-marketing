@@ -301,6 +301,7 @@ body {
 
 .concept-orbit__mist,
 .concept-orbit__ring,
+.concept-orbit__lane,
 .concept-orbit__planet,
 .concept-orbit__sphere,
 .concept-orbit__label {
@@ -363,6 +364,32 @@ body {
 .concept-orbit__system {
   position: absolute;
   inset: 0;
+}
+
+.concept-orbit__lane {
+  inset: 0;
+  transform-origin: 50% 50%;
+  pointer-events: none;
+}
+
+.concept-orbit__lane--one {
+  animation: orbit-spin-a 18s linear infinite;
+}
+
+.concept-orbit__lane--two {
+  animation: orbit-spin-b 23s linear infinite;
+}
+
+.concept-orbit__lane--three {
+  animation: orbit-spin-c 15s linear infinite;
+}
+
+.concept-orbit__lane--four {
+  animation: orbit-spin-b 27s linear infinite reverse;
+}
+
+.concept-orbit__lane--five {
+  animation: orbit-spin-a 20s linear infinite reverse;
 }
 
 .concept-orbit__ring {
@@ -484,6 +511,36 @@ body {
   inset: 2.35rem;
   transform: rotate(-30deg);
   background: radial-gradient(circle, rgba(236, 196, 118, 0.28), rgba(236, 196, 118, 0));
+}
+
+@keyframes orbit-spin-a {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit-spin-b {
+  from {
+    transform: rotate(18deg);
+  }
+
+  to {
+    transform: rotate(-342deg);
+  }
+}
+
+@keyframes orbit-spin-c {
+  from {
+    transform: rotate(-12deg);
+  }
+
+  to {
+    transform: rotate(348deg);
+  }
 }
 
 .studio-section {
