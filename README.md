@@ -1,5 +1,7 @@
 # ReHive Marketing
 
+> Source-of-truth note: Obsidian holds durable ReHive business/system context and current priorities. This repo holds the public marketing site implementation for `getrehive.com`. Before making strategic or durable changes, check `/Users/tyler-macmini/Documents/Obsidian Vault/02 Businesses/ReHive/Overview.md`, `/Users/tyler-macmini/Documents/Obsidian Vault/02 Businesses/ReHive/Current Priorities.md`, and `/Users/tyler-macmini/Documents/Obsidian Vault/07 Active Projects/ReHive R3S Repo Intake.md`.
+
 Marketing site rebuild for `getrehive.com`.
 
 ## Direction

@@ -1,0 +1,13 @@
+<svg width="512" height="512" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rehiveMarkGold" x1="12%" x2="86%" y1="10%" y2="88%">
+      <stop offset="0%" stop-color="#FFF3D8" />
+      <stop offset="38%" stop-color="#ECC476" />
+      <stop offset="100%" stop-color="#9C6024" />
+    </linearGradient>
+  </defs>
+  <path d="M44 6 74.2 23.4v41.2L44 82 13.8 64.6V23.4Z" stroke="url(#rehiveMarkGold)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M44 19.2 62.6 30v28L44 68.8 25.4 58V30Z" stroke="url(#rehiveMarkGold)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M31.5 40.3 44 32.6l12.5 7.7" stroke="url(#rehiveMarkGold)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32.2 49.2 44 56.4l11.8-7.2" stroke="url(#rehiveMarkGold)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

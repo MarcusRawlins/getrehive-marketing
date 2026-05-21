@@ -1,0 +1,17 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rehiveLockupGold" x1="12%" x2="86%" y1="10%" y2="88%">
+      <stop offset="0%" stop-color="#FFF3D8" />
+      <stop offset="38%" stop-color="#ECC476" />
+      <stop offset="100%" stop-color="#9C6024" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" rx="40" fill="#060606"/>
+  <rect x="52" y="52" width="396" height="396" rx="120" fill="#0D0A07" stroke="#3A2A14" stroke-width="2"/>
+  <path d="M250 98 384.2 175.4v149.2L250 402 115.8 324.6V175.4Z" stroke="url(#rehiveLockupGold)" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M250 156.8 332.6 206v124L250 379.2 167.4 330V206Z" stroke="url(#rehiveLockupGold)" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M194.5 251.3 250 217.6l55.5 33.7" stroke="url(#rehiveLockupGold)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M197.2 290.2 250 322.4l52.8-32.2" stroke="url(#rehiveLockupGold)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="520" y="248" fill="#F8EFD9" font-family="Space Grotesk, DM Sans, Arial, sans-serif" font-size="152" font-weight="600" letter-spacing="-5">ReHive</text>
+  <text x="528" y="320" fill="#B9B0A1" font-family="DM Sans, Arial, sans-serif" font-size="38" font-weight="500" letter-spacing="18">STUDIO</text>
+</svg>
